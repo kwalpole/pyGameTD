@@ -1,0 +1,51 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "level.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "level.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 450.5,
+                "y": 343
+            }
+        },
+        "level.tsx": {
+            "scaleInDock": 0.25,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/gentK/OneDrive - Grand View University/Fall 2023/Intro/pyGameTD/levels",
+    "last.externalTilesetPath": "C:/Users/gentK/OneDrive - Grand View University/Fall 2023/Intro/pyGameTD/levels",
+    "last.imagePath": "C:/Users/gentK/OneDrive - Grand View University/Fall 2023/Intro/pyGameTD/levels",
+    "map.height": 18,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 40,
+    "map.tileWidth": 40,
+    "map.width": 32,
+    "openFiles": [
+        "level.tmx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "level.tmx",
+        "level.tsx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 40,
+        "width": 40
+    }
+}
