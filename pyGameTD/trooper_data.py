@@ -1,21 +1,21 @@
 TROOPER_DATA = [
     {
         #1
-        "range" : 90,
-        "cooldown" : 1500,
-    },
-    {
-        #2
-        "range" : 110,
+        "range" : 150,
         "cooldown" : 1200,
     },
     {
+        #2
+        "range" : 180,
+        "cooldown" : 1000,
+    },
+    {
         #3
-        "range" : 125,
-        "cooldown" : 1000,},
+        "range" : 210,
+        "cooldown" : 800,},
     {
         #4
-        "range" : 150,
-        "cooldown" : 900,
-    },
+        "range" : 250,
+        "cooldown" : 600,
+    }
 ]

@@ -50,12 +50,12 @@ class Trooper(pg.sprite.Sprite):
             animation_list.append(temp_img)
         return animation_list
 
-    def update(self, enemy_group):
+    def update(self, enemy_group, world):
         #if target picked, play animation
         if self.target:
             self.play_animation()
         else:
-            if pg.time.get_ticks() - self.last_shot > self.cooldown:
+            if pg.time.get_ticks() - self.last_shot > (self.cooldown / world.game_speed):
                 self.pick_target(enemy_group)
 
 
@@ -65,12 +65,15 @@ class Trooper(pg.sprite.Sprite):
         y_dist = 0
         #check distance to enemy to see if in range
         for enemy in enemy_group:
-            x_dist = enemy.pos[0] - self.x
-            y_dist = enemy.pos[1] - self.y
-            dist = math.sqrt(x_dist**2 + y_dist**2)
-            if dist <= self.range:
-                self.target = enemy
-                self.angle = math.degrees(math.atan2(-y_dist, x_dist))
+            if enemy.health > 0:
+                x_dist = enemy.pos[0] - self.x
+                y_dist = enemy.pos[1] - self.y
+                dist = math.sqrt(x_dist**2 + y_dist**2)
+                if dist <= self.range:
+                    self.target = enemy
+                    self.angle = math.degrees(math.atan2(-y_dist, x_dist))
+                    self.target.health -= c.DAMAGE
+                    break
 
     def play_animation(self):
         #update img

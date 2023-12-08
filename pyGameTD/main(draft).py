@@ -3,6 +3,7 @@
 
 # 1 - import
 import pygame
+print(pygame.font.get_fonts())
 import os
 
 # 2 - Class Building
